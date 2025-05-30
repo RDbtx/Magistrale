@@ -1,2 +1,2 @@
 # Magistrale
-Useful code that i have written during the CECAI degree
+Useful code that I have written during the CECAI degree.
