@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <script>
+        /**
+         * Highlights the current webpage in the navbar
+         * */
+        var current_bar = document.getElementById("editorbar");
+        if (current_bar) {
+            current_bar.classList.add('active');
+        }
+    </script>
+
+    <div class="container mt-4">
+        <h1 class="text-left">Select Model and Image</h1>
+
+        <form method="post" action="/editor" novalidate>
+
+            <div class="mb-3">
+                <h4 class="text-left">Model:</h4>
+                <select name="model_id" class="form-select w-50">
+                    {% for model in models %}
+                        <option value="{{ model }}">{{ model }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <h4 class="text-left">Image:</h4>
+                <select name="image_id" class="form-select w-50">
+                    {% for image in images %}
+                        <option value="{{ image }}">{{ image }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div>
+                <h5>Editable Parameters</h5>
+
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="colorRange" class="me-2" style="width: 100px;">Color:</label>
+                    <input type="range" id="colorRange" min="-100" max="100" value="0" class="form-range"
+                           style="width: 150px; accent-color: dimgray; margin-right:20px">
+                    <input type="number" id="colorValue" name="color_value" min="-100" max="100" value="0"
+                           class="form-control ms-3"
+                           style="width: 75px; text-align: center">
+                </div>
+
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="brightnessRange" class="me-2" style="width: 100px;">Brightness:</label>
+                    <input type="range" id="brightnessRange" min="-100" max="100" value="0" class="form-range"
+                           style="width: 150px; accent-color: dimgray; margin-right:20px">
+                    <input type="number" id="brightnessValue" name="brightness_value" min="-100" max="100" value="0"
+                           class="form-control ms-3"
+                           style="width: 75px; text-align: center">
+                </div>
+
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="contrastRange" class="me-2" style="width: 100px;">Contrast:</label>
+                    <input type="range" id="contrastRange" min="-100" max="100" value="0" class="form-range"
+                           style="width: 150px; accent-color: dimgray; margin-right:20px">
+                    <input type="number" id="contrastValue" name="contrast_value" min="-100" max="100" value="0"
+                           class="form-control ms-3"
+                           style="width: 75px; text-align: center">
+                </div>
+
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="sharpnessRange" class="me-2" style="width: 100px;">Sharpness:</label>
+                    <input type="range" id="sharpnessRange" min="-100" max="100" value="0" class="form-range"
+                           style="width: 150px; accent-color: dimgray; margin-right:20px">
+                    <input type="number" id="sharpnessValue" name="sharpness_value" min="-100" max="100" value="0"
+                           class="form-control ms-3"
+                           style="width: 75px; text-align: center">
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+
+    <script src="/static/slider_and_values_sync.js"></script>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <script>
+        /**
+         * Highlights the current webpage in the navbar
+         * */
+        var current_bar = document.getElementById("editorbar");
+        if (current_bar) {
+            current_bar.classList.add('active');
+        }
+    </script>
+
+    <style>
+        .large-front-thumbnail {
+            position: relative;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <div class="card p-3">
+                    <h5 class="text-left">Selected Image</h5>
+                    <img class="large-front-thumbnail" id="selectedImage"
+                         src="{{ image_path }}"
+                         alt="{{ image_id }}"/>
+                </div>
+                <a class="btn btn-secondary mt-3" href="/editor" role="button">Back</a>
+                <a class="btn btn-secondary mt-3"
+                   onclick="downloadPLOT('classification_output'); downloadPLOT('histogram_output')" role="button"
+                   style=" padding-left: 10px; background-color: darkslategray ">Download Plot
+                </a>
+                <a class="btn btn-secondary mt-3"
+                   onclick="downloadClassificationJSON('classification_output'); downloadHistogramJSON()"
+                   role="button"
+                   style=" padding-left: 10px; background-color: darkslategray ">Download Results
+                </a>
+
+            </div>
+
+            <div class="col">
+                <div class="card p-3">
+                    <h5 class="text-left">Classification Output</h5>
+                    <canvas id="classification_output"
+                            style="width: 100%; height: 300px; margin: auto; padding: 20px;"></canvas>
+                    <div class="align-items-center">
+                        <h2 id="waitText"></h2>
+                    </div>
+                </div>
+                <div class="card p-3" style="margin-top: 10px">
+                    <h5 class="text-left">Histogram Output</h5>
+                    <canvas id="histogram_output"
+                            style="width: 100%; height: 300px; margin: auto; padding: 20px;"></canvas>
+                    <div class="align-items-center">
+                        <h2 id="waitText"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ 'static/graph.js' }}" id="makeGraph" classification_scores="{{ classification_scores }}"></script>
+    <script src="/static/downloads.js"></script>
+    <script src="/static/histogram_calculator.js"></script>
+
+{% endblock %}

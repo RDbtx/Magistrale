@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>app.forms package &mdash; ISDE-GROUP-F 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../static/jquery.js?v=5d32c60e"></script>
+      <script src="../static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../static/documentation_options.js?v=8d563738"></script>
+      <script src="../static/doctools.js?v=9bcbadda"></script>
+      <script src="../static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ISDE-GROUP-F
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Python Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jsdocs/index.html">JavaScript API Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ISDE-GROUP-F</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">app.forms package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/app.forms.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="app-forms-package">
+<h1>app.forms package<a class="headerlink" href="#app-forms-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-app.forms.classification_form">
+<span id="app-forms-classification-form-module"></span><h2>app.forms.classification_form module<a class="headerlink" href="#module-app.forms.classification_form" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.forms.classification_form.</span></span><span class="sig-name descname"><span class="pre">EditedImageForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/app/forms/classification_form.html#EditedImageForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#app.forms.classification_form.EditedImageForm" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A form handler for collecting and validating image editing parameters.</p>
+<p>This class is used to collect all parameters submitted through the <cite>editor_select.html</cite>
+form and pass them to the backend for processing and image editing.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.request">
+<span class="sig-name descname"><span class="pre">request</span></span><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.request" title="Link to this definition"></a></dt>
+<dd><p>The HTTP request containing form data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Request</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.errors">
+<span class="sig-name descname"><span class="pre">errors</span></span><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.errors" title="Link to this definition"></a></dt>
+<dd><p>A list of validation error messages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.model_id">
+<span class="sig-name descname"><span class="pre">model_id</span></span><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.model_id" title="Link to this definition"></a></dt>
+<dd><p>The selected model identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.image_id">
+<span class="sig-name descname"><span class="pre">image_id</span></span><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.image_id" title="Link to this definition"></a></dt>
+<dd><p>The selected image identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.color_value">
+<span class="sig-name descname"><span class="pre">color_value</span></span><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.color_value" title="Link to this definition"></a></dt>
+<dd><p>The color adjustment value (-100 to 100).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.brightness_value">
+<span class="sig-name descname"><span class="pre">brightness_value</span></span><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.brightness_value" title="Link to this definition"></a></dt>
+<dd><p>The brightness adjustment value (-100 to 100).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.contrast_value">
+<span class="sig-name descname"><span class="pre">contrast_value</span></span><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.contrast_value" title="Link to this definition"></a></dt>
+<dd><p>The contrast adjustment value (-100 to 100).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.sharpness_value">
+<span class="sig-name descname"><span class="pre">sharpness_value</span></span><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.sharpness_value" title="Link to this definition"></a></dt>
+<dd><p>The sharpness adjustment value (-100 to 100).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.is_valid">
+<span class="sig-name descname"><span class="pre">is_valid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="../_modules/app/forms/classification_form.html#EditedImageForm.is_valid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.is_valid" title="Link to this definition"></a></dt>
+<dd><p>Validates the form data.</p>
+<p>This method checks if the required fields are present and correctly formatted.
+If any required field is missing or invalid, an error message is added to the
+<cite>errors</cite> list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>True</cite> if <cite>image_id</cite> and <cite>model_id</cite> are valid, otherwise <cite>False</cite>.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.forms.classification_form.EditedImageForm.load_data">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/app/forms/classification_form.html#EditedImageForm.load_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#app.forms.classification_form.EditedImageForm.load_data" title="Link to this definition"></a></dt>
+<dd><p>Loads and processes form data from the HTTP request.</p>
+<p>This asynchronous method extracts form values from the request and assigns them
+to corresponding instance variables, including model ID, image ID, color, brightness,
+contrast, and sharpness.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.forms.classification_form.</span></span><span class="sig-name descname"><span class="pre">UploadedImageForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UploadFile</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/app/forms/classification_form.html#UploadedImageForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A form handler for processing uploaded image files and associated metadata.</p>
+<p>This class collects and validates the uploaded file, model ID, and additional image
+editing parameters submitted through the <cite>classification_upload.html</cite> and <cite>editor_select.html</cite> forms.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.request">
+<span class="sig-name descname"><span class="pre">request</span></span><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.request" title="Link to this definition"></a></dt>
+<dd><p>The HTTP request containing form data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Request</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.file">
+<span class="sig-name descname"><span class="pre">file</span></span><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.file" title="Link to this definition"></a></dt>
+<dd><p>The uploaded image file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[UploadFile]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.errors">
+<span class="sig-name descname"><span class="pre">errors</span></span><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.errors" title="Link to this definition"></a></dt>
+<dd><p>A list of validation error messages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.model_id">
+<span class="sig-name descname"><span class="pre">model_id</span></span><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.model_id" title="Link to this definition"></a></dt>
+<dd><p>The selected model identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.image_id">
+<span class="sig-name descname"><span class="pre">image_id</span></span><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.image_id" title="Link to this definition"></a></dt>
+<dd><p>The assigned image identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.color_value">
+<span class="sig-name descname"><span class="pre">color_value</span></span><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.color_value" title="Link to this definition"></a></dt>
+<dd><p>The color adjustment value (-100 to 100).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.brightness_value">
+<span class="sig-name descname"><span class="pre">brightness_value</span></span><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.brightness_value" title="Link to this definition"></a></dt>
+<dd><p>The brightness adjustment value (-100 to 100).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.contrast_value">
+<span class="sig-name descname"><span class="pre">contrast_value</span></span><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.contrast_value" title="Link to this definition"></a></dt>
+<dd><p>The contrast adjustment value (-100 to 100).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.sharpness_value">
+<span class="sig-name descname"><span class="pre">sharpness_value</span></span><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.sharpness_value" title="Link to this definition"></a></dt>
+<dd><p>The sharpness adjustment value (-100 to 100).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.is_valid">
+<span class="sig-name descname"><span class="pre">is_valid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="../_modules/app/forms/classification_form.html#UploadedImageForm.is_valid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.is_valid" title="Link to this definition"></a></dt>
+<dd><p>Validates the required fields for the uploaded image form.</p>
+<p>Ensures the uploaded file and model ID are provided.
+If any required field is missing, an error message is added to <cite>errors</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><cite>True</cite> if the form is valid (no errors found), otherwise <cite>False</cite>.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.load_data">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/app/forms/classification_form.html#UploadedImageForm.load_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.load_data" title="Link to this definition"></a></dt>
+<dd><p>Loads and processes form data from the HTTP request.</p>
+<p>Extracts form values, ensuring they are valid integers within allowed ranges.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.forms.classification_form.UploadedImageForm.safe_int">
+<span class="sig-name descname"><span class="pre">safe_int</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="../_modules/app/forms/classification_form.html#UploadedImageForm.safe_int"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#app.forms.classification_form.UploadedImageForm.safe_int" title="Link to this definition"></a></dt>
+<dd><p>Attempts to convert a given value to an integer, ensuring it falls within a specified range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>Any</em>) – The value to be converted to an integer.</p></li>
+<li><p><strong>min_value</strong> (<em>int</em><em>, </em><em>optional</em>) – The minimum allowed value (default is -100).</p></li>
+<li><p><strong>max_value</strong> (<em>int</em><em>, </em><em>optional</em>) – The maximum allowed value (default is 100).</p></li>
+<li><p><strong>default</strong> (<em>int</em><em>, </em><em>optional</em>) – The value to return if the conversion fails (default is 0).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The converted integer if successful, otherwise the default value.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-app.forms">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-app.forms" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Deidda Riccardo, Monni Alessandro, Murgioni Alessio, Navarro Lucas.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
