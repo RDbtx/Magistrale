@@ -1,1 +1,4 @@
-Tutorato 02
+# FINGERPRINTS
+Content:
+  - Fingerprint preprocessing
+  - Fingerprint matching
