@@ -1,4 +1,4 @@
 # FINGERPRINTS
-Content:
+content:
   - Fingerprint preprocessing
   - Fingerprint matching
