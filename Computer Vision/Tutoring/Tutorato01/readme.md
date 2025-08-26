@@ -1,5 +1,5 @@
 # IMAGE MANIPULATION
-contents:
+content:
   - Sampling
   - Quantization
   - Histogram computation
