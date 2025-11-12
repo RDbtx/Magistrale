@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downloads Module &mdash; ISDE-GROUP-F 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../static/jquery.js?v=5d32c60e"></script>
+      <script src="../static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../static/documentation_options.js?v=8d563738"></script>
+      <script src="../static/doctools.js?v=9bcbadda"></script>
+      <script src="../static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Graph Module" href="graph.html" />
+    <link rel="prev" title="JavaScript API Documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ISDE-GROUP-F
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Python Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">JavaScript API Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Downloads Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#downloads.downloadPLOT"><code class="docutils literal notranslate"><span class="pre">downloads.downloadPLOT()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#downloads.downloadClassificationJSON"><code class="docutils literal notranslate"><span class="pre">downloads.downloadClassificationJSON()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#downloads.downloadHistogramJSON"><code class="docutils literal notranslate"><span class="pre">downloads.downloadHistogramJSON()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="graph.html">Graph Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="histogram_calculator.html">Histogram Calculator Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slider_and_values_sync.html">Slider and Values Sync Module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ISDE-GROUP-F</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">JavaScript API Documentation</a></li>
+      <li class="breadcrumb-item active">Downloads Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/jsdocs/downloads.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="downloads-module">
+<h1>Downloads Module<a class="headerlink" href="#downloads-module" title="Link to this heading"></a></h1>
+<dl class="js function">
+<dt class="sig sig-object js" id="downloads.downloadPLOT">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">downloads</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">downloadPLOT</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementID</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#downloads.downloadPLOT" title="Link to this definition"></a></dt>
+<dd><p>Captures the content of an HTML canvas element and allows the user to download it as a JPEG image file.</p>
+<p>This function retrieves the specified canvas element using its ID, extracts its contents as a JPEG image,
+and creates a downloadable link. If the canvas element does not exist, an alert is displayed, and the function exits.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elementID</strong> (<em>string</em>) – The ID of the canvas element to download.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Error</strong> – If the canvas element is not found, an alert is displayed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="downloads.downloadClassificationJSON">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">downloads</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">downloadClassificationJSON</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elementID</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#downloads.downloadClassificationJSON" title="Link to this definition"></a></dt>
+<dd><p>Downloads classification scores from the ‘makeGraph’ script element as a JSON file.</p>
+<p>This function retrieves classification scores stored in the <cite>classification_scores</cite> attribute of
+the ‘makeGraph’ script element. If no scores are found, an alert notifies the user, and the function exits.
+The function formats the retrieved data as JSON and initiates a download as a <cite>.json</cite> file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Arguments<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elementID</strong> (<em>string</em>) – The identifier used in the downloaded filename.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Error</strong> – If no classification scores are available, an alert is displayed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="downloads.downloadHistogramJSON">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">downloads</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">downloadHistogramJSON</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#downloads.downloadHistogramJSON" title="Link to this definition"></a></dt>
+<dd><p>Downloads histogram data as a JSON file.</p>
+<p>This function retrieves histogram data from <cite>computeHistogram()</cite>, which analyzes pixel intensities
+in the red, green, and blue channels. If no histogram data is available, an alert notifies the user.
+The histogram data is then formatted as JSON and downloaded as a <cite>.json</cite> file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Error</strong> – If no histogram data is available, an alert is displayed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="JavaScript API Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="graph.html" class="btn btn-neutral float-right" title="Graph Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Deidda Riccardo, Monni Alessandro, Murgioni Alessio, Navarro Lucas.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

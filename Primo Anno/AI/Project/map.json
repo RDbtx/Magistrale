@@ -1,0 +1,1269 @@
+{
+  "Solitude": {
+    "x": 686,
+    "y": 241,
+    "neighbors": {
+      "Solitude Lighthouse": 1350.69,
+      "Giant's Coast": 1907.82,
+      "Haafingar": 1698.82,
+      "Thalmor Embassy": 2210.81,
+      "Dragon Bridge": 2596.49
+    }
+  },
+  "Solitude Lighthouse": {
+    "x": 755,
+    "y": 115,
+    "neighbors": {
+      "Solitude": 1350.69,
+      "Giant's Coast": 1650.4
+    }
+  },
+  "Giant's Coast": {
+    "x": 647,
+    "y": 58,
+    "neighbors": {
+      "Solitude": 1907.82,
+      "Solitude Lighthouse": 1650.4,
+      "Haafingar": 933.74
+    }
+  },
+  "Haafingar": {
+    "x": 606,
+    "y": 145,
+    "neighbors": {
+      "Solitude": 1698.82,
+      "Giant's Coast": 933.74,
+      "Ravenscar": 1026.92
+    }
+  },
+  "Thalmor Embassy": {
+    "x": 585,
+    "y": 203,
+    "neighbors": {
+      "Solitude": 2210.81
+    }
+  },
+  "Ravenscar": {
+    "x": 522,
+    "y": 128,
+    "neighbors": {
+      "Haafingar": 1026.92,
+      "Widow's Watch": 559.31
+    }
+  },
+  "Widow's Watch": {
+    "x": 471,
+    "y": 156,
+    "neighbors": {
+      "Ravenscar": 559.31,
+      "Ironback": 1376.96
+    }
+  },
+  "Ironback": {
+    "x": 517,
+    "y": 203,
+    "neighbors": {
+      "Widow's Watch": 1376.96,
+      "Wolfskull": 913.07
+    }
+  },
+  "Wolfskull": {
+    "x": 489,
+    "y": 234,
+    "neighbors": {
+      "Ironback": 913.07,
+      "Fort Hraggstad": 1026.1,
+      "Dragon Bridge": 1457.85,
+      "Steepfall": 1805.98,
+      "Cascabel": 1815.76
+    }
+  },
+  "Fort Hraggstad": {
+    "x": 406,
+    "y": 197,
+    "neighbors": {
+      "Wolfskull": 1026.1
+    }
+  },
+  "Steepfall": {
+    "x": 326,
+    "y": 194,
+    "neighbors": {
+      "Wolfskull": 1805.98,
+      "North Watch": 840.81,
+      "Cascabel": 964.65
+    }
+  },
+  "North Watch": {
+    "x": 231,
+    "y": 178,
+    "neighbors": {
+      "Steepfall": 840.81,
+      "Dunbarrow": 1104.4
+    }
+  },
+  "Dunbarrow": {
+    "x": 154,
+    "y": 235,
+    "neighbors": {
+      "North Watch": 1104.4,
+      "Forgotten vale pass": 876.34,
+      "Pinefrost": 1485.31
+    }
+  },
+  "Forgotten vale pass": {
+    "x": 83,
+    "y": 312,
+    "neighbors": {
+      "Dunbarrow": 876.34
+    }
+  },
+  "Pinefrost": {
+    "x": 243,
+    "y": 275,
+    "neighbors": {
+      "Dunbarrow": 1485.31,
+      "Cascabel": 884.02
+    }
+  },
+  "Cascabel": {
+    "x": 329,
+    "y": 282,
+    "neighbors": {
+      "Volskygge": 336.06,
+      "Pinemoon": 616.92,
+      "Deepwood Redoubt": 1017.10,
+      "Wolfskull": 1815.76,
+      "Pinefrost": 884.02
+    }
+  },
+  "Volskygge": {
+    "x": 306,
+    "y": 308,
+    "neighbors": {
+      "Cascabel": 336.06,
+      "Pinemoon": 739.32,
+      "Deepwood Redoubt": 796.68,
+      "Mor Khazgur": 1476.83
+    }
+  },
+  "Pinemoon": {
+    "x": 382,
+    "y": 209,
+    "neighbors": {
+      "Cascabel": 616.92,
+      "Volskygge": 739.32,
+      "Deepwood Redoubt": 783.82
+    }
+  },
+  "Deepwood Redoubt": {
+    "x": 340,
+    "y": 382,
+    "neighbors": {
+      "Cascabel": 1017.10,
+      "Volskygge": 796.68,
+      "Pinemoon": 783.82
+    }
+  },
+  "Mor Khazgur": {
+    "x": 194,
+    "y": 374,
+    "neighbors": {
+      "Druadach": 1147.04,
+      "Volskygge": 1476.83
+    }
+  },
+  "Druadach": {
+    "x": 183,
+    "y": 488,
+    "neighbors": {
+      "Mor Khazgur": 1147.04,
+      "Harmugstahl": 932.34
+    }
+  },
+  "Harmugstahl": {
+    "x": 275,
+    "y": 504,
+    "neighbors": {
+      "Bthardamz": 1797.32,
+      "Druadach": 932.34,
+      "Chillwinds": 1903.7
+    }
+  },
+  "Bthardamz": {
+    "x": 124,
+    "y": 566,
+    "neighbors": {
+      "Harmugstahl": 1797.32,
+      "Druadach pass": 940.20,
+      "Ragnvard": 1194
+    }
+  },
+  "Druadach pass": {
+    "x": 102,
+    "y": 485,
+    "neighbors": {
+      "Bthardamz": 940.20
+    }
+  },
+  "Chillwinds": {
+    "x": 450,
+    "y": 444,
+    "neighbors": {
+      "Dragon Bridge": 760.75,
+      "Liar's Retreat": 946.95,
+      "Markarth Side": 625.11,
+      "Harmugstahl": 1903.7
+    }
+  },
+  "Liar's Retreat": {
+    "x": 401,
+    "y": 533,
+    "neighbors": {
+      "Chillwinds": 946.95,
+      "Markarth Side": 850.16
+    }
+  },
+  "Dragon Bridge": {
+    "x": 466,
+    "y": 357,
+    "neighbors": {
+      "Solitude": 2596.49,
+      "Wolfskull": 1457.85,
+      "Chillwinds": 760.75,
+      "Markarth Side": 1305.02,
+      "Hailstone Valley": 1654.29
+    }
+  },
+  "Markarth Side": {
+    "x": 492,
+    "y": 508,
+    "neighbors": {
+      "Dragon Bridge": 1305.02,
+      "Liar's Retreat": 850.16,
+      "Chillwinds": 625.11,
+      "Hailstone Valley": 1022.08,
+      "Orotheim": 1577.54,
+      "Dead Man Respite": 1518.21
+    }
+  },
+  "Hailstone Valley": {
+    "x": 593,
+    "y": 499,
+    "neighbors": {
+      "Dragon Bridge": 1654.29,
+      "Markarth Side": 1022.08,
+      "Fort Snowhawk": 1144.56
+    }
+  },
+  "Ragnvard": {
+    "x": 75,
+    "y": 664,
+    "neighbors": {
+      "Bthardamz": 1194,
+      "Kolskegger": 1802.08
+    }
+  },
+  "Kolskegger": {
+    "x": 211,
+    "y": 736,
+    "neighbors": {
+      "Karthwasten Hall": 505.21,
+      "Ragnvard": 1802.08,
+      "Amber Guard": 718.40,
+      "Karthwasten": 1579.83
+    }
+  },
+  "Amber Guard": {
+    "x": 277,
+    "y": 707,
+    "neighbors": {
+      "Snowhawk": 1770.93,
+      "Kolskegger": 718.40,
+      "Karthspire": 448.36
+    }
+  },
+  "Karthwasten": {
+    "x": 295,
+    "y": 602,
+    "neighbors": {
+      "Kolskegger": 1579.83,
+      "Snowhawk": 1311.05
+    }
+  },
+  "Snowhawk": {
+    "x": 426,
+    "y": 601,
+    "neighbors": {
+      "Orotheim": 1509.26,
+      "Karthwasten": 1311.05,
+      "Amber Guard": 1770.93
+    }
+  },
+  "Karthwasten Hall": {
+    "x": 184,
+    "y": 701,
+    "neighbors": {
+      "Kolskegger": 505.21,
+      "Markarth": 974.56,
+      "Reachcliff": 2156.89,
+      "Dushnikh Yal": 1523.17
+    }
+  },
+  "Markarth": {
+    "x": 65,
+    "y": 787,
+    "neighbors": {
+      "Karthwasten Hall": 974.56
+    }
+  },
+  "Karthspire": {
+    "x": 255,
+    "y": 769,
+    "neighbors": {
+      "Amber Guard": 448.36,
+      "Reachcliff": 1448.06
+    }
+  },
+  "Reachcliff": {
+    "x": 290,
+    "y": 873,
+    "neighbors": {
+      "Karthspire": 1448.06,
+      "Dushnikh Yal": 856.78,
+      "Karthwasten Hall": 2156.89,
+      "H'roldan": 1637.83
+    }
+  },
+  "Dushnikh Yal": {
+    "x": 223,
+    "y": 932,
+    "neighbors": {
+      "Hag Rock": 1602.18,
+      "Reachcliff": 856.78,
+      "Karthwasten Hall": 1523.17,
+      "Valthume": 1736.14
+    }
+  },
+  "Hag Rock": {
+    "x": 66,
+    "y": 907,
+    "neighbors": {
+      "Dushnikh Yal": 1602.18
+    }
+  },
+  "Valthume": {
+    "x": 393,
+    "y": 977,
+    "neighbors": {
+      "Dushnikh Yal": 1736.14
+    }
+  },
+  "H'roldan": {
+    "x": 401,
+    "y": 855,
+    "neighbors": {
+      "Reachcliff": 1637.83,
+      "Soljund Sinkhole": 807.94,
+      "Lost Valley": 2142.22,
+      "Sungard": 2538.4
+    }
+  },
+  "Soljund Sinkhole": {
+    "x": 376,
+    "y": 774,
+    "neighbors": {
+      "H'roldan": 807.94,
+      "Lainalten": 1077.48
+    }
+  },
+  "Lainalten": {
+    "x": 488,
+    "y": 787,
+    "neighbors": {
+      "Rorikstead": 772.93,
+      "Soljund Sinkhole": 1077.48
+    }
+  },
+  "Rorikstead": {
+    "x": 564,
+    "y": 755,
+    "neighbors": {
+      "Lainalten": 772.93,
+      "Orotheim": 1459.06,
+      "Sungard": 1928.47,
+      "Lone Mountain": 2755.66,
+      "Rannveig": 2258.91
+    }
+  },
+  "Lost Valley": {
+    "x": 526,
+    "y": 1012,
+    "neighbors": {
+      "H'roldan": 2142.22,
+      "Sungard": 2353.51
+    }
+  },
+  "Sungard": {
+    "x": 629,
+    "y": 951,
+    "neighbors": {
+      "H'roldan": 2538.4,
+      "Rorikstead": 1928.47,
+      "Lost Valley": 2353.51,
+      "Broken Fang": 1202.31
+    }
+  },
+  "Orotheim": {
+    "x": 574,
+    "y": 629,
+    "neighbors": {
+      "Snowhawk": 1509.26,
+      "Rorikstead": 1459.06,
+      "Dead Man Respite": 1217.72,
+      "Markarth Side": 1577.54
+    }
+  },
+  "Dead Man Respite": {
+    "x": 648,
+    "y": 520,
+    "neighbors": {
+      "Morthal": 1711.25,
+      "Fort Snowhawk": 1090.51,
+      "Orotheim": 1217.72,
+      "Markarth Side": 1518.21
+    }
+  },
+  "Fort Snowhawk": {
+    "x": 704,
+    "y": 437,
+    "neighbors": {
+      "Morthal": 978.61,
+      "Dead Man Respite": 1090.51,
+      "Drajkmyr": 775.85,
+      "Hailstone Valley": 1144.56
+    }
+  },
+  "Drajkmyr": {
+    "x": 680,
+    "y": 354,
+    "neighbors": {
+      "Morthal": 1577.96,
+      "Folghuntur": 840.09,
+      "Fort Snowhawk": 775.85
+    }
+  },
+  "Folghuntur": {
+    "x": 754,
+    "y": 315,
+    "neighbors": {
+      "Morthal": 1491.92,
+      "Drajkmyr": 840.09,
+      "Ustengrav": 1413.22
+    }
+  },
+  "Ustengrav": {
+    "x": 829,
+    "y": 333,
+    "neighbors": {
+      "Morthal": 1551.27,
+      "Kjenstag": 889,
+      "Folghuntur": 1413.22
+    }
+  },
+  "Kjenstag": {
+    "x": 916,
+    "y": 419,
+    "neighbors": {
+      "Morthal": 1260.13,
+      "Ustengrav": 889
+    }
+  },
+  "Morthal": {
+    "x": 801,
+    "y": 461,
+    "neighbors": {
+      "Fort Snowhawk": 978.61,
+      "Ustengrav": 1551.27,
+      "Folghuntur": 1491.92,
+      "Drajkmyr": 1577.96,
+      "Kjenstag": 1260.13,
+      "Dunstad Grove": 1114.15,
+      "Rannveig": 2148.16
+    }
+  },
+  "Rannveig": {
+    "x": 764,
+    "y": 668,
+    "neighbors": {
+      "Morthal": 2148.16,
+      "Rorikstead": 2258.91,
+      "Redoran Retreat": 2506.92,
+      "Lone Mountain": 1999.24
+    }
+  },
+  "Dunstad Grove": {
+    "x": 908,
+    "y": 494,
+    "neighbors": {
+      "Morthal": 1114.15,
+      "Bromjunaar": 689.34,
+      "Stonehills": 1385.24
+    }
+  },
+  "Bromjunaar": {
+    "x": 909,
+    "y": 569,
+    "neighbors": {
+      "Dunstad Grove": 689.34,
+      "Redoran Retreat": 2397.77
+    }
+  },
+  "Redoran Retreat": {
+    "x": 930,
+    "y": 771,
+    "neighbors": {
+      "Rannveig": 2506.92,
+      "Bromjunaar": 2397.77,
+      "Lone Mountain": 1180.55,
+      "Black Moor": 1017.26
+    }
+  },
+  "Lone Mountain": {
+    "x": 828,
+    "y": 832,
+    "neighbors": {
+      "Rannveig": 1999.24,
+      "Rorikstead": 2755.66,
+      "Redoran Retreat": 1180.55,
+      "Black Moor": 1255.58,
+      "Broken Fang": 1061.69
+    }
+  },
+  "Broken Fang": {
+    "x": 737,
+    "y": 885,
+    "neighbors": {
+      "Sungard": 1202.31,
+      "Lone Mountain": 1061.69,
+      "Granitehall": 954.22
+    }
+  },
+  "Granitehall": {
+    "x": 744,
+    "y": 984,
+    "neighbors": {
+      "Broken Fang": 954.22,
+      "Glenmoril": 2203.45,
+      "North Keep": 981.01,
+      "Brittelshin Pass": 2268.02,
+      "Black Moor": 2493.42
+    }
+  },
+  "Glenmoril": {
+    "x": 585,
+    "y": 1103,
+    "neighbors": {
+      "Bannermist": 1240.13,
+      "Granitehall": 2203.45,
+      "North Keep": 1734.18
+    }
+  },
+  "Bannermist": {
+    "x": 702,
+    "y": 1144,
+    "neighbors": {
+      "Glenmoril": 1240.13,
+      "Twilight": 1252.93
+    }
+  },
+  "Twilight": {
+    "x": 627,
+    "y": 1248,
+    "neighbors": {
+      "Bannermist": 1252.93
+    }
+  },
+  "North Keep": {
+    "x": 754,
+    "y": 1077,
+    "neighbors": {
+      "Glenmoril": 1734.18,
+      "Granitehall": 981.01,
+      "Neugard Watch": 918,
+      "Ilinalta's Deep": 1039.47
+    }
+  },
+  "Neugard Watch": {
+    "x": 809,
+    "y": 1154,
+    "neighbors": {
+      "Falkreath": 2150.12,
+      "Oakwood": 2157.01,
+      "North Keep": 918,
+      "Craked Tusk Keep": 2216.08
+    }
+  },
+  "Craked Tusk Keep": {
+    "x": 714,
+    "y": 1287,
+    "neighbors": {
+      "Neugard Watch": 2216.08
+    }
+  },
+  "Falkreath": {
+    "x": 840,
+    "y": 1281,
+    "neighbors": {
+      "Neugard Watch": 2150.12,
+      "Peak Shade": 749.40
+    }
+  },
+  "Peak Shade": {
+    "x": 916,
+    "y": 1287,
+    "neighbors": {
+      "Pinewatch": 693.67,
+      "Falkreath": 749.40,
+      "Bonechill": 1993.85
+    }
+  },
+  "Pinewatch": {
+    "x": 961,
+    "y": 1228,
+    "neighbors": {
+      "Peak Shade": 693.67,
+      "Oakwood": 743.62,
+      "Helgen": 1471.74
+    }
+  },
+  "Oakwood": {
+    "x": 1008,
+    "y": 1164,
+    "neighbors": {
+      "Riverwood": 1542.08,
+      "Pinewatch": 743.62,
+      "Helgen": 1492.3,
+      "Neugard Watch": 2157.01,
+      "Ilinalta's Deep": 1997.1
+    }
+  },
+  "Bonechill": {
+    "x": 1051,
+    "y": 1405,
+    "neighbors": {
+      "Pale Pass": 1542.08,
+      "Neugard": 1925.94,
+      "Peak Shade": 1993.85
+    }
+  },
+  "Pale Pass": {
+    "x": 1158,
+    "y": 1445,
+    "neighbors": {
+      "Bonechill": 1542.08,
+      "Neugard": 2075.75
+    }
+  },
+  "Neugard": {
+    "x": 1189,
+    "y": 1309,
+    "neighbors": {
+      "Bonechill": 1925.94,
+      "Pale Pass": 2075.75,
+      "Helgen": 1039.23
+    }
+  },
+  "Helgen": {
+    "x": 1112,
+    "y": 1245,
+    "neighbors": {
+      "Haemar's Shame": 2012.34,
+      "Neugard": 1039.23,
+      "Oakwood": 1492.3,
+      "Pinewatch": 1471.74
+    }
+  },
+  "Ilinalta's Deep": {
+    "x": 850,
+    "y": 1078,
+    "neighbors": {
+      "Brittelshin Pass": 1077.7,
+      "North Keep": 1039.47,
+      "Oakwood": 1997.1
+    }
+  },
+  "Brittelshin Pass": {
+    "x": 895,
+    "y": 1035,
+    "neighbors": {
+      "Ilinalta's Deep": 1077.7,
+      "Black Moor": 1755.73,
+      "Granitehall": 2268.02
+    }
+  },
+  "Riverwood": {
+    "x": 1133,
+    "y": 1059,
+    "neighbors": {
+      "Bleak Falls Barrow": 1638.92,
+      "Honningbrew": 1477.59,
+      "Oakwood": 1542.08
+    }
+  },
+  "Bleak Falls Barrow": {
+    "x": 1005,
+    "y": 1046,
+    "neighbors": {
+      "Riverwood": 1638.92,
+      "Honningbrew": 2585.08,
+      "Black Moor": 2475.19
+    }
+  },
+  "Black Moor": {
+    "x": 950,
+    "y": 878,
+    "neighbors": {
+      "Lone Mountain": 1255.58,
+      "Redoran Retreat": 1017.26,
+      "Granitehall": 2493.42,
+      "Brittelshin Pass": 1755.73,
+      "Whiterun": 1903.20,
+      "Honningbrew": 1992.26
+    }
+  },
+  "Whiterun": {
+    "x": 1157,
+    "y": 835,
+    "neighbors": {
+      "Black Moor": 1903.20,
+      "Honningbrew": 649.57
+    }
+  },
+  "Honningbrew": {
+    "x": 1144,
+    "y": 910,
+    "neighbors": {
+      "Whiterun": 649.57,
+      "Riverwood": 1477.59,
+      "Black Moor": 1992.26,
+      "Bleak Falls Barrow": 2585.08,
+      "Whitewatch": 1965.12,
+      "Graywinter": 1487.45
+    }
+  },
+  "Whitewatch": {
+    "x": 1181,
+    "y": 744,
+    "neighbors": {
+      "Honningbrew": 1965.12,
+      "Fellglow Keep": 1711.03,
+      "Whitewatch Farms": 644.51
+    }
+  },
+  "Graywinter": {
+    "x": 1281,
+    "y": 833,
+    "neighbors": {
+      "Honningbrew": 1487.45,
+      "Valtheim": 1264.02,
+      "Nimalten City": 3047.75
+    }
+  },
+  "Valtheim": {
+    "x": 1411,
+    "y": 799,
+    "neighbors": {
+      "Fellglow Keep": 711.18,
+      "Graywinter": 1264.02,
+      "Darkshade": 1129.93
+    }
+  },
+  "Fellglow Keep": {
+    "x": 1362,
+    "y": 759,
+    "neighbors": {
+      "Valtheim": 711.18,
+      "Whitewatch": 1711.03
+    }
+  },
+  "Whitewatch Farms": {
+    "x": 1188,
+    "y": 674,
+    "neighbors": {
+      "Whitewatch": 644.51,
+      "Volunruud": 1037.95,
+      "Korvanjund": 1809.21
+    }
+  },
+  "Volunruud": {
+    "x": 1085,
+    "y": 643,
+    "neighbors": {
+      "Shrine of Akatosh": 1541.87,
+      "Whitewatch Farms": 1037.95,
+      "Fort Dunstad": 1893.66
+    }
+  },
+  "Shrine of Akatosh": {
+    "x": 1005,
+    "y": 529,
+    "neighbors": {
+      "Volunruud": 1541.87,
+      "Frostmere": 1037.95,
+      "Fort Dunstad": 1763.05
+    }
+  },
+  "Frostmere": {
+    "x": 1068,
+    "y": 426,
+    "neighbors": {
+      "Stonehills": 542.54,
+      "Shrine of Akatosh": 1037.95,
+      "Fellhammer": 1861.88,
+      "Bardmont": 1768.11
+    }
+  },
+  "Fellhammer": {
+    "x": 1246,
+    "y": 427,
+    "neighbors": {
+      "Bardmont": 1826.63,
+      "Helarchen Creek": 796.27,
+      "Frostmere": 1861.88,
+      "Fort Dunstad": 887.08
+    }
+  },
+  "Bardmont": {
+    "x": 1144,
+    "y": 312,
+    "neighbors": {
+      "Fellhammer": 1826.63,
+      "Frostmere": 1768.11,
+      "Mzinchaleft": 957,
+      "High Gate": 2514.69,
+      "Nightcaller": 922.12,
+      "Dawnstar": 658.78
+    }
+  },
+  "Dawnstar": {
+    "x": 1180,
+    "y": 254,
+    "neighbors": {
+      "Bardmont": 658.78
+    }
+  },
+  "Mzinchaleft": {
+    "x": 1052,
+    "y": 353,
+    "neighbors": {
+      "Bardmont": 957,
+      "High Gate": 1812.15,
+      "Stonehills": 518.82
+    }
+  },
+  "High Gate": {
+    "x": 910,
+    "y": 232,
+    "neighbors": {
+      "Bardmont": 2514.69,
+      "Mzinchaleft": 1812.15,
+      "Stonehills": 2197.84
+    }
+  },
+  "Stonehills": {
+    "x": 1018,
+    "y": 398,
+    "neighbors": {
+      "Dunstad Grove": 1385.24,
+      "Mzinchaleft": 518.82,
+      "High Gate": 2197.84,
+      "Frostmere": 542.54
+    }
+  },
+  "Nightcaller": {
+    "x": 1235,
+    "y": 271,
+    "neighbors": {
+      "Bardmont": 922.12,
+      "Helarchen Creek": 1693.53
+    }
+  },
+  "Helarchen Creek": {
+    "x": 1320,
+    "y": 382,
+    "neighbors": {
+      "Saarthal": 2477.4,
+      "Nightcaller": 1693.53,
+      "Fellhammer": 796.27
+    }
+  },
+  "Fort Dunstad": {
+    "x": 1170,
+    "y": 481,
+    "neighbors": {
+      "Fellhammer": 887.08,
+      "Shrine of Akatosh": 1763.05,
+      "Volunruud": 1893.66,
+      "Korvanjund": 1941.57,
+      "Silverdrift": 1941.57
+    }
+  },
+  "Korvanjund": {
+    "x": 1337,
+    "y": 573,
+    "neighbors": {
+      "Fort Dunstad": 1941.57,
+      "Silverdrift": 438.26,
+      "Whitewatch Farms": 1809.21
+    }
+  },
+  "Silverdrift": {
+    "x": 1333,
+    "y": 510,
+    "neighbors": {
+      "Fort Dunstad": 1941.57,
+      "Korvanjund": 438.26,
+      "Nightgate Inn": 911.47
+    }
+  },
+  "Nightgate Inn": {
+    "x": 1408,
+    "y": 555,
+    "neighbors": {
+      "Aftland": 1658.37,
+      "Laintar Dale": 464.76,
+      "Silverdrift": 911.47,
+      "Amol": 1319.83
+    }
+  },
+  "Laintar Dale": {
+    "x": 1422,
+    "y": 602,
+    "neighbors": {
+      "Gallow's Rock": 2206.88,
+      "Nightgate Inn": 464.76
+    }
+  },
+  "Gallow's Rock": {
+    "x": 1511,
+    "y": 775,
+    "neighbors": {
+      "Laintar Dale": 2206.88,
+      "Amol": 2211.34
+    }
+  },
+  "Amol": {
+    "x": 1533,
+    "y": 582,
+    "neighbors": {
+      "Nightgate Inn": 1319.83,
+      "Gallow's Rock": 2211.34,
+      "Fort Amol": 918.01,
+      "Braidwood": 2629.82
+    }
+  },
+  "Fort Amol": {
+    "x": 1612,
+    "y": 525,
+    "neighbors": {
+      "Whistling Mine": 1835.45,
+      "Snow Veil": 2144.45,
+      "Amol": 918.01,
+      "Braidwood": 2629.82
+    }
+  },
+  "Whistling Mine": {
+    "x": 1693,
+    "y": 397,
+    "neighbors": {
+      "Fort Amol": 1835.45,
+      "Snow Veil": 1119.29,
+      "Winterhold": 1573.44
+    }
+  },
+  "Winterhold": {
+    "x": 1607,
+    "y": 260,
+    "neighbors": {
+      "Saarthal": 1067.31,
+      "College of Winterhold": 619.80,
+      "Whistling Mine": 1573.44
+    }
+  },
+  "College of Winterhold": {
+    "x": 1642,
+    "y": 210,
+    "neighbors": {
+      "Winterhold": 619.80
+    }
+  },
+  "Saarthal": {
+    "x": 1511,
+    "y": 323,
+    "neighbors": {
+      "Winterhold": 1067.31,
+      "Aftland": 948.63,
+      "Helarchen Creek": 2477.4
+    }
+  },
+  "Aftland": {
+    "x": 1437,
+    "y": 393,
+    "neighbors": {
+      "Nightgate Inn": 1658.37,
+      "Saarthal": 948.63
+    }
+  },
+  "Snow Veil": {
+    "x": 1799,
+    "y": 420,
+    "neighbors": {
+      "Fort Amol": 2144.45,
+      "Whistling Mine": 1119.29,
+      "Windhelm": 1903.20
+    }
+  },
+  "Windhelm": {
+    "x": 1743,
+    "y": 605,
+    "neighbors": {
+      "Braidwood": 670.29,
+      "Snow Veil": 1903.20
+    }
+  },
+  "Braidwood": {
+    "x": 1768,
+    "y": 681,
+    "neighbors": {
+      "Windhelm": 670.29,
+      "Amol": 2629.82,
+      "Fort Yngol": 1868.15,
+      "Kynesgrove": 965.31,
+      "Pargran Village": 4032.62
+    }
+  },
+  "Fort Yngol": {
+    "x": 1936,
+    "y": 601,
+    "neighbors": {
+      "Braidwood": 1868.15,
+      "Dunmeth Pass": 470.44
+    }
+  },
+  "Dunmeth Pass": {
+    "x": 1988,
+    "y": 609,
+    "neighbors": {
+      "Fort Yngol": 470.44
+    }
+  },
+  "Pargran Village": {
+    "x": 1572,
+    "y": 961,
+    "neighbors": {
+      "Braidwood": 4032.62,
+      "Darkshade": 1109.75,
+      "Vernim Wood": 3766.2,
+      "Nimalten City": 2036.1
+    }
+  },
+  "Nimalten City": {
+    "x": 1479,
+    "y": 1057,
+    "neighbors": {
+      "Ivarstead": 1107.05,
+      "Graywinter": 3047.75,
+      "Pargran Village": 2036.1
+    }
+  },
+  "Darkshade": {
+    "x": 1469,
+    "y": 895,
+    "neighbors": {
+      "Valtheim": 1129.93,
+      "Pargran Village": 1109.75
+    }
+  },
+  "Kynesgrove": {
+    "x": 1754,
+    "y": 750,
+    "neighbors": {
+      "Braidwood": 965.31,
+      "Dragon Wood": 439.02,
+      "Aalto": 1475.12
+    }
+  },
+  "Dragon Wood": {
+    "x": 1793,
+    "y": 740,
+    "neighbors": {
+      "Narzulbur": 709.31,
+      "Kynesgrove": 439.02
+    }
+  },
+  "Narzulbur": {
+    "x": 1860,
+    "y": 763,
+    "neighbors": {
+      "Dragon Wood": 709.31,
+      "Aalto": 1809.21,
+      "Vernim Wood": 2437.02
+    }
+  },
+  "Aalto": {
+    "x": 1729,
+    "y": 903,
+    "neighbors": {
+      "Kynesgrove": 1475.12,
+      "Narzulbur": 1809.21,
+      "Vernim Wood": 1730.35
+    }
+  },
+  "Vernim Wood": {
+    "x": 1894,
+    "y": 1013,
+    "neighbors": {
+      "Narzulbur": 2437.02,
+      "Pargran Village": 3766.2,
+      "Aalto": 1730.35,
+      "Nilheim": 3543.9,
+      "Shor's Stone": 1423.76
+    }
+  },
+  "Shor's Stone": {
+    "x": 1895,
+    "y": 1141,
+    "neighbors": {
+      "Reich Corigate": 1237.72,
+      "Fort Greenwall": 627.79,
+      "Vernim Wood": 1423.76
+    }
+  },
+  "Reich Corigate": {
+    "x": 1772,
+    "y": 1145,
+    "neighbors": {
+      "Shor's Stone": 1237.72,
+      "Fort Greenwall": 1584.59,
+      "Nilheim": 2014.69
+    }
+  },
+  "Fort Greenwall": {
+    "x": 1920,
+    "y": 1205,
+    "neighbors": {
+      "Shor's Stone": 627.79,
+      "Reich Corigate": 1584.59,
+      "Riften": 1345.77,
+      "Greenwall": 1604.60
+    }
+  },
+  "Nilheim": {
+    "x": 1561,
+    "y": 1121,
+    "neighbors": {
+      "Sunguard": 1597.71,
+      "Haemar's Shame": 3674.81,
+      "Vernim Wood": 3543.9,
+      "Reich Corigate": 2014.69,
+      "Ivarstead": 1376.67
+    }
+  },
+  "Sunguard": {
+    "x": 1621,
+    "y": 1258,
+    "neighbors": {
+      "Nilheim": 1597.71,
+      "Largashbur": 1978.08,
+      "Greenwall": 1793.53,
+      "Haemar's Shame": 4315.71
+    }
+  },
+  "Ivarstead": {
+    "x": 1429,
+    "y": 1163,
+    "neighbors": {
+      "Nimalten City": 1107.05,
+      "Nilheim": 1376.67,
+      "Haemar's Shame": 2216.64,
+      "High Hrotgar": 4400.43
+    }
+  },
+  "High Hrotgar": {
+    "x": 1301,
+    "y": 1066,
+    "neighbors": {
+      "Throat of the World": 2196.71,
+      "Ivarstead": 4400.43
+    }
+  },
+  "Throat of the World": {
+    "x": 1316,
+    "y": 1073,
+    "neighbors": {
+      "High Hrotgar": 2196.71
+    }
+  },
+  "Haemar's Shame": {
+    "x": 1310,
+    "y": 1253,
+    "neighbors": {
+      "Ivarstead": 2216.64,
+      "Sunguard": 4315.71,
+      "Helgen": 2012.34,
+      "Nilheim": 3674.81
+    }
+  },
+  "Greenwall": {
+    "x": 1802,
+    "y": 1312,
+    "neighbors": {
+      "Fort Greenwall": 1604.60,
+      "Sunguard": 1793.53,
+      "Largashbur": 1542.45,
+      "Riften": 1920.15
+    }
+  },
+  "Largashbur": {
+    "x": 1745,
+    "y": 1411,
+    "neighbors": {
+      "Vundeheim": 2601.11,
+      "Sunguard": 1978.08,
+      "Greenwall": 1542.45,
+      "Riften": 2259.41
+    }
+  },
+  "Vundeheim": {
+    "x": 1999,
+    "y": 1477,
+    "neighbors": {
+      "Largashbur": 2601.11,
+      "Fort Dawnguard": 1843.46,
+      "Riften": 1566.22
+    }
+  },
+  "Fort Dawnguard": {
+    "x": 2155,
+    "y": 1414,
+    "neighbors": {
+      "Vundeheim": 1843.46,
+      "Riften": 2169.18
+    }
+  },
+  "Riften": {
+    "x": 1957,
+    "y": 1334,
+    "neighbors": {
+      "Vundeheim": 1566.22,
+      "Fort Dawnguard": 2169.18,
+      "Largashbur": 2259.41,
+      "Greenwall": 1920.15,
+      "Fort Greenwall": 1345.77
+    }
+  }
+}
+
+
+
