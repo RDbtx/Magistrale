@@ -2,7 +2,7 @@
 Useful code that I have written during the CECAI degree.
 
 
-local virtual enviroment location inside macbook:
+local virtual environment location inside macbook:
 ```console
 source ~/Desktop/Documents/Progetti/venv_folders/.venv/bin/activate
 ```
