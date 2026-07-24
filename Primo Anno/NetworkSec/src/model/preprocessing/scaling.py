@@ -1,0 +1,171 @@
+import sys
+import os
+import joblib
+from sklearn.preprocessing import MinMaxScaler
+import pandas as pd
+
+
+# =====================================
+# ---         Configuration         ---
+# =====================================
+
+FLAG_COLS = [
+    'tcp.flags.ack', 'tcp.flags.push', 'tcp.flags.reset', 'tcp.flags.syn', 'tcp.flags.fin',
+    'quic.long.packet_type', 'quic.fixed_bit', 'quic.spin_bit',
+    'quic.stream.fin', 'dns.flags.response', 'http.content_type'
+]
+
+TO_SCALE_COLUMNS = [
+    "frame.len", "ip.len", "tcp.len", "tcp.hdr_len", "tcp.window_size_value",
+    "tcp.option_len", "udp.length", "tls.record.length", "tls.reassembled.length",
+    "tls.handshake.length", "tls.handshake.certificates_length", "tls.handshake.certificate_length",
+    "tls.handshake.session_id_length", "tls.handshake.cipher_suites_length",
+    "tls.handshake.extensions_length", "tls.handshake.client_cert_vrfy.sig_len",
+    "quic.packet_length", "quic.packet_number_length", "quic.length",
+    "quic.nci.connection_id.length", "quic.crypto.length", "quic.stream.len",
+    "quic.token_length", "quic.padding_length", "http2.length", "http2.header.length",
+    "http2.header.name.length", "http2.header.value.length", "http2.headers.content_length",
+    "http3.frame_length", "http3.settings.qpack.max_table_capacity",
+    "http3.settings.max_field_section_size", "dns.count.queries", "dns.count.answers",
+    "http.content_length"
+]
+
+
+# =====================================
+# ---   Scaling Helper Functions    ---
+# =====================================
+
+def fill_missing_values(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Fills NaN values in the DataFrame. FLAG_COLS receive -1 to preserve them
+    as a distinct category before One-Hot Encoding; all remaining NaN cells are filled with 0.
+
+    Inputs:
+    - df: DataFrame with potential NaN values.
+
+    Output:
+    - df: DataFrame with all NaN values filled.
+
+    """
+    print("\nFilling missing values...")
+    for col in FLAG_COLS:
+        df[col] = df[col].fillna(-1)
+    df = df.fillna(0)
+    print("Done filling NaN cells!")
+    return df
+
+
+def resolve_compound_values(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Evaluates string-encoded arithmetic expressions in all object-type columns
+    (excluding Label), converting them to numeric values.
+
+    Inputs:
+    - df: DataFrame potentially containing string arithmetic in object columns.
+
+    Output:
+    - df: DataFrame with all compound string values resolved to numeric.
+
+    """
+    sys.setrecursionlimit(5000)
+    print("\nStarted resolving compound values...")
+    obj_cols = [c for c in df.select_dtypes(include="object").columns if c != "Label"]
+    total = len(obj_cols)
+    for i, col in enumerate(obj_cols, start=1):
+        try:
+            df[col] = df[col].apply(lambda v: pd.eval(v) if isinstance(v, str) else v)
+        except Exception:
+            pass
+        print(f" - Progress: {i:>2}/{total} | calculations in {col} done!")
+    print("Done resolving all compound values!")
+    return df
+
+
+def one_hot_encode(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Applies One-Hot Encoding to all FLAG_COLS, replacing each categorical column
+    with binary indicator columns.
+
+    Inputs:
+    - df: DataFrame containing the flag/categorical columns to encode.
+
+    Output:
+    - df: DataFrame with FLAG_COLS replaced by their OHE binary columns.
+
+    """
+    print("\nStarting One-Hot Encoding...")
+    df = pd.get_dummies(df, columns=FLAG_COLS)
+    print("Done One-Hot Encoding!")
+    return df
+
+
+def minmax_scale(df: pd.DataFrame, scaler_save_path: str = None) -> pd.DataFrame:
+    """
+    Applies MinMax normalization to all TO_SCALE_COLUMNS, scaling values to the [0, 1] range.
+    Moves the Label column back to the last position after scaling.
+    Optionally saves the fitted scaler to disk for reuse at inference time.
+    The saved joblib file contains the fitted scaler, the ordered list of numeric columns
+    it was fit on, and the full post-OHE column list used by the firewall preprocessor
+    to reindex live packets to the exact feature space the model expects.
+
+    Inputs:
+    - df: DataFrame containing the numeric columns to scale.
+    - scaler_save_path: destination path to save the fitted scaler as a joblib file.
+
+    Output:
+    - df: DataFrame with TO_SCALE_COLUMNS normalized and Label as the last column.
+
+    """
+    print("\nStarting MinMax Scaling...")
+    scaler = MinMaxScaler()
+    df[TO_SCALE_COLUMNS] = df[TO_SCALE_COLUMNS].astype(float)
+    df[TO_SCALE_COLUMNS] = scaler.fit_transform(df[TO_SCALE_COLUMNS])
+    df.insert(len(df.columns) - 1, "Label", df.pop("Label"))
+    print("Done MinMax scaling!")
+
+    if scaler_save_path:
+        ohe_columns = [c for c in df.columns if c != "Label"]
+        joblib.dump({
+            "scaler": scaler,
+            "scaler_columns": TO_SCALE_COLUMNS,
+            "ohe_columns": ohe_columns,
+        }, scaler_save_path)
+        print(f"Scaler saved to {scaler_save_path} "
+              f"({len(ohe_columns)} OHE columns included)")
+
+    return df
+
+
+# =====================================
+# ---      Main Scaling Process     ---
+# =====================================
+
+def scaling(csv_dir: str) -> None:
+    """
+    Runs the full scaling pipeline on the merged CSV: fills NaN values, resolves
+    compound string expressions, applies One-Hot Encoding to flag columns,
+    applies MinMax scaling to numeric columns, and saves the final
+    classification-ready CSV alongside a reusable scaler artifact.
+
+    Inputs:
+    - csv_dir: Path to the merged input CSV file (pcap-all.csv).
+
+    """
+    print("\n" + "=" * 30)
+    print("\t SCALING PROCESS")
+    print("" + "=" * 30)
+    print("Scaling dataset data...")
+    output_path = os.path.join(os.path.dirname(csv_dir), "pcap-all-final.csv")
+    print("Reading:", csv_dir)
+    df = pd.read_csv(csv_dir, sep=",", on_bad_lines='skip', encoding="ISO-8859-1", low_memory=False)
+    print("Done reading CSV!")
+
+    df = fill_missing_values(df)
+    df = resolve_compound_values(df)
+    df = one_hot_encode(df)
+
+    scaler_path = os.path.join(os.path.dirname(csv_dir), "scaler.joblib")
+    df = minmax_scale(df, scaler_save_path=scaler_path)
+
+    df.to_csv(output_path, index=False)
+    print("Scaling Complete!\n")
